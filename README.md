@@ -64,3 +64,4 @@ for(int i=0;i<idx;i++){
     printf("삭제할 데이터가 없습니다.\n");
 }
 
+sfsdfdfdfsf
