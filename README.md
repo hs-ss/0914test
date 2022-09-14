@@ -8,7 +8,7 @@ enum {
     UPDATE,
 };
 
-// 회원정보 하나 저장할 구조체, 이름, 성별
+
 typedef struct member{
     char name[30];
     char tel[30];
