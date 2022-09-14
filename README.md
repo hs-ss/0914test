@@ -1,5 +1,3 @@
-# first commit Readme
-
 #include <stdio.h>
 #include <string.h>
 enum {
@@ -64,4 +62,53 @@ for(int i=0;i<idx;i++){
     printf("삭제할 데이터가 없습니다.\n");
 }
 
-sfsdfdfdfsf
+void UpdateMember(){
+char str[30];
+printf("수정할 이름 입력 : ");
+scanf("%s",str);
+for(int i=0;i<idx;i++){
+    if(strcmp(arr[i].name,str)==0){
+        return;
+    }
+}
+    printf("회원 정보가 없습니다.\n");
+}
+
+int main(void){
+    int no = -1;
+
+    while(no != 0){
+        puts("--- 회원정보 관리 프로그램 ---");
+        puts("1. 회원정보 등록");
+        puts("2. 회원정보 검색");
+        puts("3. 회원정보 삭제");
+        puts("4. 회원정보 수정");
+        puts("0. 프로그램 종료");
+        puts("원하시는 메뉴 번호 입력 : ");
+        scanf("%d", &no);
+
+
+    switch(no){
+ 
+    case INSERT:
+    InsertMember();
+    break;
+
+    case SEARCH:
+    SearchMember();
+    break;
+
+    case DELETE:
+    DeleteMember();
+    break;
+
+    case UPDATE:
+    UpdateMember();
+    break;
+}
+
+    }
+
+
+    return 0;
+}
