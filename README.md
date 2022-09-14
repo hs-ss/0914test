@@ -68,11 +68,19 @@ printf("수정할 이름 입력 : ");
 scanf("%s",str);
 for(int i=0;i<idx;i++){
     if(strcmp(arr[i].name,str)==0){
+       printf("이름 입력 : ");
+    scanf("%s",arr[idx].name);
+    printf("연락처 입력 : ");
+    scanf("%s",arr[idx].tel);
+    
+    printf("회원 정보 수정 완료\n");
+}
+       
         return;
     }
-}
     printf("회원 정보가 없습니다.\n");
 }
+
 
 int main(void){
     int no = -1;
